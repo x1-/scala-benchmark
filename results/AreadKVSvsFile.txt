@@ -1,0 +1,22 @@
+jmh:run com.inkenkun.x1.scala.benchmark.AreadKVSvsFile.+ -i 2 -wi 2 -f 1 -t 1 -tu s -bm all
+
+[info] # Run complete. Total time: 00:13:41
+[info]
+[info] Benchmark                     Mode    Cnt   Score   Error  Units
+[info] AreadKVSvsFile.file$2g        thrpt     2   0.127          ops/s
+[info] AreadKVSvsFile.memcache$34k   thrpt     2   0.054          ops/s
+[info] AreadKVSvsFile.redis$500m     thrpt     2   0.119          ops/s
+[info] AreadKVSvsFile.redis$34k      thrpt     2   0.067          ops/s
+[info] AreadKVSvsFile.file$2g        avgt      2   7.923          s/op
+[info] AreadKVSvsFile.memcache$34k   avgt      2  19.135          s/op
+[info] AreadKVSvsFile.redis$500m     avgt      2   8.400          s/op
+[info] AreadKVSvsFile.redis$34k      avgt      2  13.795          s/op
+[info] AreadKVSvsFile.file$2g        sample    2   8.556          s/op
+[info] AreadKVSvsFile.memcache$34k   sample    2  19.881          s/op
+[info] AreadKVSvsFile.redis$500m     sample    2   8.452          s/op
+[info] AreadKVSvsFile.redis$34k      sample    2  13.833          s/op
+[info] AreadKVSvsFile.file$2g        ss        2   7.933          s/op
+[info] AreadKVSvsFile.memcache$34k   ss        2  19.590          s/op
+[info] AreadKVSvsFile.redis$500m     ss        2   8.605          s/op
+[info] AreadKVSvsFile.redis$34k      ss        2  13.727          s/op
+[success] Total time: 823 s, completed 2015/12/13 9:41:33

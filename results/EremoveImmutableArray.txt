@@ -1,0 +1,112 @@
+jmh:run com.inkenkun.x1.scala.benchmark.EremoveImmutableArray.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] Benchmark                                       Mode    Cnt       Score     Error   Units
+[info] EremoveImmutableArray.removeHead$List$100k     thrpt      2       1.568            ops/ms
+[info] EremoveImmutableArray.removeHead$List$10k      thrpt      2      16.932            ops/ms
+[info] EremoveImmutableArray.removeHead$List$1k       thrpt      2     131.338            ops/ms
+[info] EremoveImmutableArray.removeHead$Stream$100k   thrpt      2       0.975            ops/ms
+[info] EremoveImmutableArray.removeHead$Stream$10k    thrpt      2      11.540            ops/ms
+[info] EremoveImmutableArray.removeHead$Stream$1k     thrpt      2     165.490            ops/ms
+[info] EremoveImmutableArray.removeHead$Vector$100k   thrpt      2       0.064            ops/ms
+[info] EremoveImmutableArray.removeHead$Vector$10k    thrpt      2       0.778            ops/ms
+[info] EremoveImmutableArray.removeHead$Vector$1k     thrpt      2      10.435            ops/ms
+[info] EremoveImmutableArray.removeTail$List$10       thrpt      2     953.964            ops/ms
+[info] EremoveImmutableArray.removeTail$List$100      thrpt      2      12.494            ops/ms
+[info] EremoveImmutableArray.removeTail$List$100k     thrpt      2      ≈ 10⁻⁵            ops/ms
+[info] EremoveImmutableArray.removeTail$List$10k      thrpt      2       0.001            ops/ms
+[info] EremoveImmutableArray.removeTail$List$1k       thrpt      2       0.123            ops/ms
+[info] EremoveImmutableArray.removeTail$Stream$1k     thrpt      2       0.030            ops/ms
+[info] EremoveImmutableArray.removeTail$Vector$100k   thrpt      2       0.073            ops/ms
+[info] EremoveImmutableArray.removeTail$Vector$10k    thrpt      2       0.904            ops/ms
+[info] EremoveImmutableArray.removeTail$Vector$1k     thrpt      2      10.873            ops/ms
+[info] EremoveImmutableArray.take$List$100k           thrpt      2      ≈ 10⁻⁵            ops/ms
+[info] EremoveImmutableArray.take$List$10k            thrpt      2       0.002            ops/ms
+[info] EremoveImmutableArray.take$List$1k             thrpt      2       0.262            ops/ms
+[info] EremoveImmutableArray.take$Stream$100k         thrpt      2      ≈ 10⁻⁵            ops/ms
+[info] EremoveImmutableArray.take$Stream$10k          thrpt      2      ≈ 10⁻³            ops/ms
+[info] EremoveImmutableArray.take$Stream$1k           thrpt      2       0.045            ops/ms
+[info] EremoveImmutableArray.take$Vector$100k         thrpt      2       0.073            ops/ms
+[info] EremoveImmutableArray.take$Vector$10k          thrpt      2       0.884            ops/ms
+[info] EremoveImmutableArray.take$Vector$1k           thrpt      2      10.862            ops/ms
+[info] EremoveImmutableArray.removeHead$List$100k      avgt      2       0.641             ms/op
+[info] EremoveImmutableArray.removeHead$List$10k       avgt      2       0.054             ms/op
+[info] EremoveImmutableArray.removeHead$List$1k        avgt      2       0.008             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$100k    avgt      2       0.861             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$10k     avgt      2       0.087             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$1k      avgt      2       0.006             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$100k    avgt      2      15.613             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$10k     avgt      2       1.301             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$1k      avgt      2       0.097             ms/op
+[info] EremoveImmutableArray.removeTail$List$10        avgt      2       0.001             ms/op
+[info] EremoveImmutableArray.removeTail$List$100       avgt      2       0.084             ms/op
+[info] EremoveImmutableArray.removeTail$List$100k      avgt      2  115197.981             ms/op
+[info] EremoveImmutableArray.removeTail$List$10k       avgt      2     768.991             ms/op
+[info] EremoveImmutableArray.removeTail$List$1k        avgt      2       8.178             ms/op
+[info] EremoveImmutableArray.removeTail$Stream$1k      avgt      2      33.888             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$100k    avgt      2      13.714             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$10k     avgt      2       1.099             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$1k      avgt      2       0.091             ms/op
+[info] EremoveImmutableArray.take$List$100k            avgt      2   37743.921             ms/op
+[info] EremoveImmutableArray.take$List$10k             avgt      2     499.605             ms/op
+[info] EremoveImmutableArray.take$List$1k              avgt      2       3.830             ms/op
+[info] EremoveImmutableArray.take$Stream$100k          avgt      2  224474.556             ms/op
+[info] EremoveImmutableArray.take$Stream$10k           avgt      2    2265.626             ms/op
+[info] EremoveImmutableArray.take$Stream$1k            avgt      2      22.433             ms/op
+[info] EremoveImmutableArray.take$Vector$100k          avgt      2      14.167             ms/op
+[info] EremoveImmutableArray.take$Vector$10k           avgt      2       1.120             ms/op
+[info] EremoveImmutableArray.take$Vector$1k            avgt      2       0.092             ms/op
+[info] EremoveImmutableArray.removeHead$List$100k    sample   2936       0.680 ±   0.003   ms/op
+[info] EremoveImmutableArray.removeHead$List$10k     sample  28045       0.071 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$List$1k      sample  27641       0.009 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$Stream$100k  sample   2318       0.862 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$Stream$10k   sample  22714       0.088 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$Stream$1k    sample  20620       0.006 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$Vector$100k  sample    130      15.530 ±   0.951   ms/op
+[info] EremoveImmutableArray.removeHead$Vector$10k   sample   1581       1.264 ±   0.021   ms/op
+[info] EremoveImmutableArray.removeHead$Vector$1k    sample  20839       0.096 ±   0.002   ms/op
+[info] EremoveImmutableArray.removeTail$List$10      sample  21144       0.002 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeTail$List$100     sample  24847       0.080 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeTail$List$100k    sample      2  114823.266             ms/op
+[info] EremoveImmutableArray.removeTail$List$10k     sample      4     765.198 ± 367.291   ms/op
+[info] EremoveImmutableArray.removeTail$List$1k      sample    249       8.067 ±   0.230   ms/op
+[info] EremoveImmutableArray.removeTail$Stream$1k    sample     59      34.855 ±   2.318   ms/op
+[info] EremoveImmutableArray.removeTail$Vector$100k  sample    146      13.794 ±   0.528   ms/op
+[info] EremoveImmutableArray.removeTail$Vector$10k   sample   1792       1.114 ±   0.014   ms/op
+[info] EremoveImmutableArray.removeTail$Vector$1k    sample  19889       0.100 ±   0.001   ms/op
+[info] EremoveImmutableArray.take$List$100k          sample      2   37715.182             ms/op
+[info] EremoveImmutableArray.take$List$10k           sample      6     504.190 ± 127.149   ms/op
+[info] EremoveImmutableArray.take$List$1k            sample    525       3.813 ±   0.097   ms/op
+[info] EremoveImmutableArray.take$Stream$100k        sample      2  222801.428             ms/op
+[info] EremoveImmutableArray.take$Stream$10k         sample      2    2271.216             ms/op
+[info] EremoveImmutableArray.take$Stream$1k          sample     90      22.448 ±   0.488   ms/op
+[info] EremoveImmutableArray.take$Vector$100k        sample    141      14.227 ±   0.662   ms/op
+[info] EremoveImmutableArray.take$Vector$10k         sample   1735       1.151 ±   0.017   ms/op
+[info] EremoveImmutableArray.take$Vector$1k          sample  19610       0.102 ±   0.001   ms/op
+[info] EremoveImmutableArray.removeHead$List$100k        ss      2       1.039             ms/op
+[info] EremoveImmutableArray.removeHead$List$10k         ss      2       1.518             ms/op
+[info] EremoveImmutableArray.removeHead$List$1k          ss      2       0.192             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$100k      ss      2       2.213             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$10k       ss      2       1.516             ms/op
+[info] EremoveImmutableArray.removeHead$Stream$1k        ss      2       0.201             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$100k      ss      2      31.509             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$10k       ss      2       4.299             ms/op
+[info] EremoveImmutableArray.removeHead$Vector$1k        ss      2       0.995             ms/op
+[info] EremoveImmutableArray.removeTail$List$10          ss      2       0.079             ms/op
+[info] EremoveImmutableArray.removeTail$List$100         ss      2       0.666             ms/op
+[info] EremoveImmutableArray.removeTail$List$100k        ss      2  113934.426             ms/op
+[info] EremoveImmutableArray.removeTail$List$10k         ss      2     820.018             ms/op
+[info] EremoveImmutableArray.removeTail$List$1k          ss      2       4.893             ms/op
+[info] EremoveImmutableArray.removeTail$Stream$1k        ss      2      49.105             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$100k      ss      2      31.206             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$10k       ss      2       2.980             ms/op
+[info] EremoveImmutableArray.removeTail$Vector$1k        ss      2       1.104             ms/op
+[info] EremoveImmutableArray.take$List$100k              ss      2   37843.613             ms/op
+[info] EremoveImmutableArray.take$List$10k               ss      2     575.837             ms/op
+[info] EremoveImmutableArray.take$List$1k                ss      2       5.625             ms/op
+[info] EremoveImmutableArray.take$Stream$100k            ss      2  215201.702             ms/op
+[info] EremoveImmutableArray.take$Stream$10k             ss      2    2274.484             ms/op
+[info] EremoveImmutableArray.take$Stream$1k              ss      2      44.506             ms/op
+[info] EremoveImmutableArray.take$Vector$100k            ss      2      31.334             ms/op
+[info] EremoveImmutableArray.take$Vector$10k             ss      2       2.949             ms/op
+[info] EremoveImmutableArray.take$Vector$1k              ss      2       1.048             ms/op
+[success] Total time: 7787 s, completed 2015/12/25 9:00:56

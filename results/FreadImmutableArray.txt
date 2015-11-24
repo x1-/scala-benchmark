@@ -1,0 +1,52 @@
+jmh:run com.inkenkun.x1.scala.benchmark.FreadImmutableArray.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] Benchmark                                     Mode    Cnt      Score   Error   Units
+[info] FreadImmutableArray.randomRead$Array$100k    thrpt      2      0.366          ops/ms
+[info] FreadImmutableArray.randomRead$Array$10k     thrpt      2      4.018          ops/ms
+[info] FreadImmutableArray.randomRead$Array$1k      thrpt      2     40.282          ops/ms
+[info] FreadImmutableArray.randomRead$List$100k     thrpt      2     ≈ 10⁻⁴          ops/ms
+[info] FreadImmutableArray.randomRead$List$10k      thrpt      2      0.008          ops/ms
+[info] FreadImmutableArray.randomRead$List$1k       thrpt      2      0.915          ops/ms
+[info] FreadImmutableArray.randomRead$Stream$100k   thrpt      2     ≈ 10⁻⁴          ops/ms
+[info] FreadImmutableArray.randomRead$Stream$10k    thrpt      2      0.006          ops/ms
+[info] FreadImmutableArray.randomRead$Stream$1k     thrpt      2      0.489          ops/ms
+[info] FreadImmutableArray.randomRead$Vector$100k   thrpt      2      0.262          ops/ms
+[info] FreadImmutableArray.randomRead$Vector$10k    thrpt      2      3.458          ops/ms
+[info] FreadImmutableArray.randomRead$Vector$1k     thrpt      2     41.229          ops/ms
+[info] FreadImmutableArray.randomRead$Array$100k     avgt      2      2.693           ms/op
+[info] FreadImmutableArray.randomRead$Array$10k      avgt      2      0.245           ms/op
+[info] FreadImmutableArray.randomRead$Array$1k       avgt      2      0.024           ms/op
+[info] FreadImmutableArray.randomRead$List$100k      avgt      2  11807.801           ms/op
+[info] FreadImmutableArray.randomRead$List$10k       avgt      2    119.287           ms/op
+[info] FreadImmutableArray.randomRead$List$1k        avgt      2      1.090           ms/op
+[info] FreadImmutableArray.randomRead$Stream$100k    avgt      2  16118.170           ms/op
+[info] FreadImmutableArray.randomRead$Stream$10k     avgt      2    160.829           ms/op
+[info] FreadImmutableArray.randomRead$Stream$1k      avgt      2      2.050           ms/op
+[info] FreadImmutableArray.randomRead$Vector$100k    avgt      2      3.826           ms/op
+[info] FreadImmutableArray.randomRead$Vector$10k     avgt      2      0.293           ms/op
+[info] FreadImmutableArray.randomRead$Vector$1k      avgt      2      0.025           ms/op
+[info] FreadImmutableArray.randomRead$Array$100k   sample    752      2.660 ± 0.043   ms/op
+[info] FreadImmutableArray.randomRead$Array$10k    sample   8045      0.248 ± 0.004   ms/op
+[info] FreadImmutableArray.randomRead$Array$1k     sample  20498      0.024 ± 0.001   ms/op
+[info] FreadImmutableArray.randomRead$List$100k    sample      2  11811.160           ms/op
+[info] FreadImmutableArray.randomRead$List$10k     sample     18    119.283 ± 0.154   ms/op
+[info] FreadImmutableArray.randomRead$List$1k      sample   1833      1.090 ± 0.003   ms/op
+[info] FreadImmutableArray.randomRead$Stream$100k  sample      2  16106.127           ms/op
+[info] FreadImmutableArray.randomRead$Stream$10k   sample     14    160.975 ± 0.079   ms/op
+[info] FreadImmutableArray.randomRead$Stream$1k    sample   1396      1.432 ± 0.004   ms/op
+[info] FreadImmutableArray.randomRead$Vector$100k  sample    524      3.819 ± 0.240   ms/op
+[info] FreadImmutableArray.randomRead$Vector$10k   sample   6927      0.291 ± 0.018   ms/op
+[info] FreadImmutableArray.randomRead$Vector$1k    sample  20095      0.024 ± 0.001   ms/op
+[info] FreadImmutableArray.randomRead$Array$100k       ss      2      4.518           ms/op
+[info] FreadImmutableArray.randomRead$Array$10k        ss      2      0.587           ms/op
+[info] FreadImmutableArray.randomRead$Array$1k         ss      2      0.201           ms/op
+[info] FreadImmutableArray.randomRead$List$100k        ss      2  11790.787           ms/op
+[info] FreadImmutableArray.randomRead$List$10k         ss      2    120.668           ms/op
+[info] FreadImmutableArray.randomRead$List$1k          ss      2      1.384           ms/op
+[info] FreadImmutableArray.randomRead$Stream$100k      ss      2  16102.748           ms/op
+[info] FreadImmutableArray.randomRead$Stream$10k       ss      2    161.374           ms/op
+[info] FreadImmutableArray.randomRead$Stream$1k        ss      2      1.742           ms/op
+[info] FreadImmutableArray.randomRead$Vector$100k      ss      2      4.200           ms/op
+[info] FreadImmutableArray.randomRead$Vector$10k       ss      2      0.401           ms/op
+[info] FreadImmutableArray.randomRead$Vector$1k        ss      2      0.153           ms/op
+[success] Total time: 739 s, completed 2015/12/19 11:41:08

@@ -1,0 +1,52 @@
+jmh:run com.inkenkun.x1.scala.benchmark.EremoveMutableArray.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] Benchmark                                          Mode    Cnt       Score    Error   Units
+[info] EremoveMutableArray.removeHead$ArrayBuffer$100k   thrpt      2   64922.644           ops/ms
+[info] EremoveMutableArray.removeHead$ArrayBuffer$10k    thrpt      2   65853.035           ops/ms
+[info] EremoveMutableArray.removeHead$ArrayBuffer$1k     thrpt      2  188594.667           ops/ms
+[info] EremoveMutableArray.removeHead$ListBuffer$100k    thrpt      2  196737.571           ops/ms
+[info] EremoveMutableArray.removeHead$ListBuffer$10k     thrpt      2   56743.078           ops/ms
+[info] EremoveMutableArray.removeHead$ListBuffer$1k      thrpt      2  196824.252           ops/ms
+[info] EremoveMutableArray.removeTail$ArrayBuffer$100k   thrpt      2   54802.818           ops/ms
+[info] EremoveMutableArray.removeTail$ArrayBuffer$10k    thrpt      2   53870.045           ops/ms
+[info] EremoveMutableArray.removeTail$ArrayBuffer$1k     thrpt      2  115946.598           ops/ms
+[info] EremoveMutableArray.removeTail$ListBuffer$100k    thrpt      2   49832.795           ops/ms
+[info] EremoveMutableArray.removeTail$ListBuffer$10k     thrpt      2   54003.186           ops/ms
+[info] EremoveMutableArray.removeTail$ListBuffer$1k      thrpt      2  121748.845           ops/ms
+[info] EremoveMutableArray.removeHead$ArrayBuffer$100k    avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$10k     avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$1k      avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$100k     avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$10k      avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$1k       avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$100k    avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$10k     avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$1k      avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$100k     avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$10k      avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$1k       avgt      2      ≈ 10⁻⁵            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$100k  sample  24230      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$10k   sample  26621      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$1k    sample  25156      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$100k   sample  25978      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$10k    sample  26302      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$1k     sample  26319      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$100k  sample  21711      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$10k   sample  22488      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$1k    sample  30776      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$100k   sample  21295      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$10k    sample  34034      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$1k     sample  32479      ≈ 10⁻⁴            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$100k      ss      2       0.010            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$10k       ss      2       0.008            ms/op
+[info] EremoveMutableArray.removeHead$ArrayBuffer$1k        ss      2       0.008            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$100k       ss      2       0.011            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$10k        ss      2       0.007            ms/op
+[info] EremoveMutableArray.removeHead$ListBuffer$1k         ss      2       0.010            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$100k      ss      2       0.012            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$10k       ss      2       0.011            ms/op
+[info] EremoveMutableArray.removeTail$ArrayBuffer$1k        ss      2       0.011            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$100k       ss      2       0.014            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$10k        ss      2       0.011            ms/op
+[info] EremoveMutableArray.removeTail$ListBuffer$1k         ss      2       0.010            ms/op
+[success] Total time: 253 s, completed 2015/12/19 11:27:39

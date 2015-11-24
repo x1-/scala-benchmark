@@ -1,0 +1,28 @@
+jmh:run com.inkenkun.x1.scala.benchmark.BforVSmap.+ -i 2 -wi 3 -f 1 -t 1 -tu ns -bm all
+
+[info] Benchmark             Mode    Cnt       Score        Error   Units
+[info] BforVSmap.for$100k   thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.for$10k    thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.for$1k     thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.map$100k   thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.map$10k    thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.map$1k     thrpt      4       0.320 ±      0.001  ops/ns
+[info] BforVSmap.for$100k    avgt      4       3.128 ±      0.016   ns/op
+[info] BforVSmap.for$10k     avgt      4       3.127 ±      0.001   ns/op
+[info] BforVSmap.for$1k      avgt      4       3.126 ±      0.006   ns/op
+[info] BforVSmap.map$100k    avgt      4       3.127 ±      0.008   ns/op
+[info] BforVSmap.map$10k     avgt      4       3.127 ±      0.002   ns/op
+[info] BforVSmap.map$1k      avgt      4       3.126 ±      0.005   ns/op
+[info] BforVSmap.for$100k  sample  95153     192.651 ±     20.444   ns/op
+[info] BforVSmap.for$10k   sample  46468     163.546 ±      1.194   ns/op
+[info] BforVSmap.for$1k    sample  46617     163.197 ±      1.077   ns/op
+[info] BforVSmap.map$100k  sample  78043     178.954 ±     11.086   ns/op
+[info] BforVSmap.map$10k   sample  46621     163.769 ±      1.342   ns/op
+[info] BforVSmap.map$1k    sample  46497     164.287 ±      1.285   ns/op
+[info] BforVSmap.for$100k      ss      4  172376.000 ± 446713.627   ns/op
+[info] BforVSmap.for$10k       ss      4  551867.000 ±  26292.801   ns/op
+[info] BforVSmap.for$1k        ss      4   67243.250 ±  11402.584   ns/op
+[info] BforVSmap.map$100k      ss      4  219688.500 ± 670314.308   ns/op
+[info] BforVSmap.map$10k       ss      4  555528.250 ±  54022.709   ns/op
+[info] BforVSmap.map$1k        ss      4   66738.250 ±   2641.863   ns/op
+[success] Total time: 197 s, completed 2015/12/19 7:16:18

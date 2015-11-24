@@ -1,0 +1,54 @@
+jmh:run com.inkenkun.x1.scala.benchmark.Cfibonacci.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] # Run complete. Total time: 00:03:18                                                                                                                                [12/9167]
+[info]
+[info] Benchmark                      Mode    Cnt      Score    Error   Units
+[info] Cfibonacci.array$100k         thrpt      2      3.997           ops/ms
+[info] Cfibonacci.array$10k          thrpt      2     39.720           ops/ms
+[info] Cfibonacci.array$1k           thrpt      2    374.026           ops/ms
+[info] Cfibonacci.arrayBuffer$100k   thrpt      2      0.509           ops/ms
+[info] Cfibonacci.arrayBuffer$10k    thrpt      2      5.822           ops/ms
+[info] Cfibonacci.arrayBuffer$1k     thrpt      2     67.433           ops/ms
+[info] Cfibonacci.stream$100k        thrpt      2  28744.672           ops/ms
+[info] Cfibonacci.stream$10k         thrpt      2  28762.927           ops/ms
+[info] Cfibonacci.stream$1k          thrpt      2  27000.940           ops/ms
+[info] Cfibonacci.streamReal$100k    thrpt      2      0.101           ops/ms
+[info] Cfibonacci.streamReal$10k     thrpt      2      1.011           ops/ms
+[info] Cfibonacci.streamReal$1k      thrpt      2      9.882           ops/ms
+[info] Cfibonacci.array$100k          avgt      2      0.245            ms/op
+[info] Cfibonacci.array$10k           avgt      2      0.025            ms/op
+[info] Cfibonacci.array$1k            avgt      2      0.003            ms/op
+[info] Cfibonacci.arrayBuffer$100k    avgt      2      1.965            ms/op
+[info] Cfibonacci.arrayBuffer$10k     avgt      2      0.172            ms/op
+[info] Cfibonacci.arrayBuffer$1k      avgt      2      0.015            ms/op
+[info] Cfibonacci.stream$100k         avgt      2     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.stream$10k          avgt      2     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.stream$1k           avgt      2     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.streamReal$100k     avgt      2     10.548            ms/op
+[info] Cfibonacci.streamReal$10k      avgt      2      0.992            ms/op
+[info] Cfibonacci.streamReal$1k       avgt      2      0.102            ms/op
+[info] Cfibonacci.array$100k        sample   8172      0.244 ±  0.001   ms/op
+[info] Cfibonacci.array$10k         sample  39306      0.025 ±  0.001   ms/op
+[info] Cfibonacci.array$1k          sample  23192      0.003 ±  0.001   ms/op
+[info] Cfibonacci.arrayBuffer$100k  sample   1018      1.965 ±  0.028   ms/op
+[info] Cfibonacci.arrayBuffer$10k   sample  11465      0.174 ±  0.001   ms/op
+[info] Cfibonacci.arrayBuffer$1k    sample  33510      0.015 ±  0.001   ms/op
+[info] Cfibonacci.stream$100k       sample  25840     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.stream$10k        sample  25838     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.stream$1k         sample  25772     ≈ 10⁻⁴            ms/op
+[info] Cfibonacci.streamReal$100k   sample    199     10.096 ±  0.652   ms/op
+[info] Cfibonacci.streamReal$10k    sample   2007      0.995 ±  0.013   ms/op
+[info] Cfibonacci.streamReal$1k     sample  22125      0.090 ±  0.001   ms/op
+[info] Cfibonacci.array$100k            ss      2      1.436            ms/op
+[info] Cfibonacci.array$10k             ss      2      0.551            ms/op
+[info] Cfibonacci.array$1k              ss      2      0.069            ms/op
+[info] Cfibonacci.arrayBuffer$100k      ss      2      2.770            ms/op
+[info] Cfibonacci.arrayBuffer$10k       ss      2      2.666            ms/op
+[info] Cfibonacci.arrayBuffer$1k        ss      2      0.258            ms/op
+[info] Cfibonacci.stream$100k           ss      2      0.012            ms/op
+[info] Cfibonacci.stream$10k            ss      2      0.009            ms/op
+[info] Cfibonacci.stream$1k             ss      2      0.009            ms/op
+[info] Cfibonacci.streamReal$100k       ss      2     12.374            ms/op
+[info] Cfibonacci.streamReal$10k        ss      2      4.456            ms/op
+[info] Cfibonacci.streamReal$1k         ss      2      0.535            ms/op
+[success] Total time: 199 s, completed 2015/12/20 4:44:13

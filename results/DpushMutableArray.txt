@@ -1,0 +1,54 @@
+jmh:run com.inkenkun.x1.scala.benchmark.DpushMutableArray.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] # Run complete. Total time: 00:03:33
+[info]
+[info] Benchmark                                    Mode    Cnt    Score    Error   Units
+[info] DpushMutableArray.append$ArrayBuffer$100k   thrpt      2    0.490           ops/ms
+[info] DpushMutableArray.append$ArrayBuffer$10k    thrpt      2    5.419           ops/ms
+[info] DpushMutableArray.append$ArrayBuffer$1k     thrpt      2   67.081           ops/ms
+[info] DpushMutableArray.append$ListBuffer$100k    thrpt      2    0.300           ops/ms
+[info] DpushMutableArray.append$ListBuffer$10k     thrpt      2    3.004           ops/ms
+[info] DpushMutableArray.append$ListBuffer$1k      thrpt      2   31.351           ops/ms
+[info] DpushMutableArray.insert$ArrayBuffer$100k   thrpt      2    0.001           ops/ms
+[info] DpushMutableArray.insert$ArrayBuffer$10k    thrpt      2    0.130           ops/ms
+[info] DpushMutableArray.insert$ArrayBuffer$1k     thrpt      2   10.027           ops/ms
+[info] DpushMutableArray.insert$ListBuffer$100k    thrpt      2    0.281           ops/ms
+[info] DpushMutableArray.insert$ListBuffer$10k     thrpt      2    2.956           ops/ms
+[info] DpushMutableArray.insert$ListBuffer$1k      thrpt      2   33.648           ops/ms
+[info] DpushMutableArray.append$ArrayBuffer$100k    avgt      2    2.043            ms/op
+[info] DpushMutableArray.append$ArrayBuffer$10k     avgt      2    0.190            ms/op
+[info] DpushMutableArray.append$ArrayBuffer$1k      avgt      2    0.015            ms/op
+[info] DpushMutableArray.append$ListBuffer$100k     avgt      2    3.598            ms/op
+[info] DpushMutableArray.append$ListBuffer$10k      avgt      2    0.333            ms/op
+[info] DpushMutableArray.append$ListBuffer$1k       avgt      2    0.032            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$100k    avgt      2  909.459            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$10k     avgt      2    7.668            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$1k      avgt      2    0.100            ms/op
+[info] DpushMutableArray.insert$ListBuffer$100k     avgt      2    3.500            ms/op
+[info] DpushMutableArray.insert$ListBuffer$10k      avgt      2    0.359            ms/op
+[info] DpushMutableArray.insert$ListBuffer$1k       avgt      2    0.030            ms/op
+[info] DpushMutableArray.append$ArrayBuffer$100k  sample    980    2.041 ±  0.038   ms/op
+[info] DpushMutableArray.append$ArrayBuffer$10k   sample  10454    0.191 ±  0.001   ms/op
+[info] DpushMutableArray.append$ArrayBuffer$1k    sample  33358    0.015 ±  0.001   ms/op
+[info] DpushMutableArray.append$ListBuffer$100k   sample    567    3.529 ±  0.119   ms/op
+[info] DpushMutableArray.append$ListBuffer$10k    sample   5881    0.339 ±  0.003   ms/op
+[info] DpushMutableArray.append$ListBuffer$1k     sample  30356    0.033 ±  0.001   ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$100k  sample      4  909.640 ±  6.776   ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$10k   sample    262    7.651 ±  0.024   ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$1k    sample  19884    0.100 ±  0.001   ms/op
+[info] DpushMutableArray.insert$ListBuffer$100k   sample    568    3.525 ±  0.201   ms/op
+[info] DpushMutableArray.insert$ListBuffer$10k    sample   5536    0.360 ±  0.005   ms/op
+[info] DpushMutableArray.insert$ListBuffer$1k     sample  33398    0.030 ±  0.001   ms/op
+[info] DpushMutableArray.append$ArrayBuffer$100k      ss      2    3.084            ms/op
+[info] DpushMutableArray.append$ArrayBuffer$10k       ss      2    1.397            ms/op
+[info] DpushMutableArray.append$ArrayBuffer$1k        ss      2    0.292            ms/op
+[info] DpushMutableArray.append$ListBuffer$100k       ss      2    7.363            ms/op
+[info] DpushMutableArray.append$ListBuffer$10k        ss      2    1.881            ms/op
+[info] DpushMutableArray.append$ListBuffer$1k         ss      2    0.253            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$100k      ss      2  910.618            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$10k       ss      2    8.764            ms/op
+[info] DpushMutableArray.insert$ArrayBuffer$1k        ss      2    0.455            ms/op
+[info] DpushMutableArray.insert$ListBuffer$100k       ss      2    7.226            ms/op
+[info] DpushMutableArray.insert$ListBuffer$10k        ss      2    1.909            ms/op
+[info] DpushMutableArray.insert$ListBuffer$1k         ss      2    0.251            ms/op
+[success] Total time: 214 s, completed 2015/12/19 8:37:15

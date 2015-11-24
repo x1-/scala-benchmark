@@ -1,0 +1,138 @@
+jmh:run com.inkenkun.x1.scala.benchmark.Gregexp.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] # Run complete. Total time: 00:14:06
+[info]
+[info] Benchmark                             Mode    Cnt     Score    Error   Units
+[info] Gregexp.findAllIn$behind$1$1k        thrpt      2     0.054           ops/ms
+[info] Gregexp.findAllIn$behind$10$1k       thrpt      2     0.006           ops/ms
+[info] Gregexp.findAllIn$behind$100$1k      thrpt      2     0.001           ops/ms
+[info] Gregexp.findAllIn$behind$inf$1k      thrpt      2    ≈ 10⁻⁴           ops/ms
+[info] Gregexp.findAllIn$chars$1$1k         thrpt      2     0.416           ops/ms
+[info] Gregexp.findAllIn$chars$10$1k        thrpt      2     0.184           ops/ms
+[info] Gregexp.findAllIn$chars$100$1k       thrpt      2     0.026           ops/ms
+[info] Gregexp.findAllIn$quant$1$1k         thrpt      2     0.106           ops/ms
+[info] Gregexp.findAllIn$quant$10$1k        thrpt      2     0.011           ops/ms
+[info] Gregexp.findAllIn$quant$100$1k       thrpt      2     0.001           ops/ms
+[info] Gregexp.findAllIn$quant$inf$1k       thrpt      2     0.416           ops/ms
+[info] Gregexp.findFirstIn$behind$1$1k      thrpt      2     0.053           ops/ms
+[info] Gregexp.findFirstIn$behind$10$1k     thrpt      2     0.001           ops/ms
+[info] Gregexp.findFirstIn$behind$100$1k    thrpt      2     0.001           ops/ms
+[info] Gregexp.findFirstIn$behind$inf$1k    thrpt      2    ≈ 10⁻⁴           ops/ms
+[info] Gregexp.findFirstIn$chars$1$1k       thrpt      2     0.420           ops/ms
+[info] Gregexp.findFirstIn$chars$10$1k      thrpt      2     0.184           ops/ms
+[info] Gregexp.findFirstIn$chars$100$1k     thrpt      2     0.026           ops/ms
+[info] Gregexp.findFirstIn$quant$1$1k       thrpt      2     0.106           ops/ms
+[info] Gregexp.findFirstIn$quant$10$1k      thrpt      2     0.011           ops/ms
+[info] Gregexp.findFirstIn$quant$100$1k     thrpt      2     0.001           ops/ms
+[info] Gregexp.findFirstIn$quant$inf$1k     thrpt      2     0.476           ops/ms
+[info] Gregexp.findPrefixOf$behind$1$1k     thrpt      2    17.128           ops/ms
+[info] Gregexp.findPrefixOf$behind$10$1k    thrpt      2    17.138           ops/ms
+[info] Gregexp.findPrefixOf$behind$100$1k   thrpt      2    17.163           ops/ms
+[info] Gregexp.findPrefixOf$behind$inf$1k   thrpt      2    17.208           ops/ms
+[info] Gregexp.findPrefixOf$chars$1$1k      thrpt      2     0.419           ops/ms
+[info] Gregexp.findPrefixOf$chars$10$1k     thrpt      2     0.184           ops/ms
+[info] Gregexp.findPrefixOf$chars$100$1k    thrpt      2     0.026           ops/ms
+[info] Gregexp.findPrefixOf$quant$1$1k      thrpt      2    15.403           ops/ms
+[info] Gregexp.findPrefixOf$quant$10$1k     thrpt      2     9.788           ops/ms
+[info] Gregexp.findPrefixOf$quant$100$1k    thrpt      2     3.339           ops/ms
+[info] Gregexp.findPrefixOf$quant$inf$1k    thrpt      2     0.480           ops/ms
+[info] Gregexp.findAllIn$behind$1$1k         avgt      2    18.913            ms/op
+[info] Gregexp.findAllIn$behind$10$1k        avgt      2   142.761            ms/op
+[info] Gregexp.findAllIn$behind$100$1k       avgt      2  1415.227            ms/op
+[info] Gregexp.findAllIn$behind$inf$1k       avgt      2  6462.361            ms/op
+[info] Gregexp.findAllIn$chars$1$1k          avgt      2     2.403            ms/op
+[info] Gregexp.findAllIn$chars$10$1k         avgt      2     5.432            ms/op
+[info] Gregexp.findAllIn$chars$100$1k        avgt      2    38.366            ms/op
+[info] Gregexp.findAllIn$quant$1$1k          avgt      2     9.454            ms/op
+[info] Gregexp.findAllIn$quant$10$1k         avgt      2    88.886            ms/op
+[info] Gregexp.findAllIn$quant$100$1k        avgt      2   744.412            ms/op
+[info] Gregexp.findAllIn$quant$inf$1k        avgt      2     2.421            ms/op
+[info] Gregexp.findFirstIn$behind$1$1k       avgt      2    18.735            ms/op
+[info] Gregexp.findFirstIn$behind$10$1k      avgt      2  1399.909            ms/op
+[info] Gregexp.findFirstIn$behind$100$1k     avgt      2  1471.043            ms/op
+[info] Gregexp.findFirstIn$behind$inf$1k     avgt      2  6618.042            ms/op
+[info] Gregexp.findFirstIn$chars$1$1k        avgt      2     2.386            ms/op
+[info] Gregexp.findFirstIn$chars$10$1k       avgt      2     5.439            ms/op
+[info] Gregexp.findFirstIn$chars$100$1k      avgt      2    38.138            ms/op
+[info] Gregexp.findFirstIn$quant$1$1k        avgt      2     9.389            ms/op
+[info] Gregexp.findFirstIn$quant$10$1k       avgt      2    88.713            ms/op
+[info] Gregexp.findFirstIn$quant$100$1k      avgt      2   741.178            ms/op
+[info] Gregexp.findFirstIn$quant$inf$1k      avgt      2     2.097            ms/op
+[info] Gregexp.findPrefixOf$behind$1$1k      avgt      2     0.058            ms/op
+[info] Gregexp.findPrefixOf$behind$10$1k     avgt      2     0.058            ms/op
+[info] Gregexp.findPrefixOf$behind$100$1k    avgt      2     0.058            ms/op
+[info] Gregexp.findPrefixOf$behind$inf$1k    avgt      2     0.058            ms/op
+[info] Gregexp.findPrefixOf$chars$1$1k       avgt      2     2.391            ms/op
+[info] Gregexp.findPrefixOf$chars$10$1k      avgt      2     5.432            ms/op
+[info] Gregexp.findPrefixOf$chars$100$1k     avgt      2    38.153            ms/op
+[info] Gregexp.findPrefixOf$quant$1$1k       avgt      2     0.063            ms/op
+[info] Gregexp.findPrefixOf$quant$10$1k      avgt      2     0.120            ms/op
+[info] Gregexp.findPrefixOf$quant$100$1k     avgt      2     0.299            ms/op
+[info] Gregexp.findPrefixOf$quant$inf$1k     avgt      2     2.070            ms/op
+[info] Gregexp.findAllIn$behind$1$1k       sample    104    19.541 ±  0.050   ms/op
+[info] Gregexp.findAllIn$behind$10$1k      sample     12   169.782 ±  0.920   ms/op
+[info] Gregexp.findAllIn$behind$100$1k     sample      2  1390.412            ms/op
+[info] Gregexp.findAllIn$behind$inf$1k     sample      2  5649.727            ms/op
+[info] Gregexp.findAllIn$chars$1$1k        sample    828     2.416 ±  0.022   ms/op
+[info] Gregexp.findAllIn$chars$10$1k       sample    368     5.447 ±  0.054   ms/op
+[info] Gregexp.findAllIn$chars$100$1k      sample     54    38.199 ±  0.229   ms/op
+[info] Gregexp.findAllIn$quant$1$1k        sample    203     9.846 ±  0.102   ms/op
+[info] Gregexp.findAllIn$quant$10$1k       sample     22    90.988 ±  0.234   ms/op
+[info] Gregexp.findAllIn$quant$100$1k      sample      4   746.062 ±  6.776   ms/op
+[info] Gregexp.findAllIn$quant$inf$1k      sample    828     2.416 ±  0.015   ms/op
+[info] Gregexp.findFirstIn$behind$1$1k     sample    104    19.314 ±  0.051   ms/op
+[info] Gregexp.findFirstIn$behind$10$1k    sample      2  1578.107            ms/op
+[info] Gregexp.findFirstIn$behind$100$1k   sample      2  1425.015            ms/op
+[info] Gregexp.findFirstIn$behind$inf$1k   sample      2  5591.007            ms/op
+[info] Gregexp.findFirstIn$chars$1$1k      sample    841     2.379 ±  0.013   ms/op
+[info] Gregexp.findFirstIn$chars$10$1k     sample    369     5.427 ±  0.052   ms/op
+[info] Gregexp.findFirstIn$chars$100$1k    sample     54    38.038 ±  0.159   ms/op
+[info] Gregexp.findFirstIn$quant$1$1k      sample    212     9.431 ±  0.007   ms/op
+[info] Gregexp.findFirstIn$quant$10$1k     sample     24    88.741 ±  0.182   ms/op
+[info] Gregexp.findFirstIn$quant$100$1k    sample      4   740.295 ±  5.532   ms/op
+[info] Gregexp.findFirstIn$quant$inf$1k    sample   1044     1.916 ±  0.014   ms/op
+[info] Gregexp.findPrefixOf$behind$1$1k    sample  30638     0.065 ±  0.001   ms/op
+[info] Gregexp.findPrefixOf$behind$10$1k   sample  33776     0.059 ±  0.001   ms/op
+[info] Gregexp.findPrefixOf$behind$100$1k  sample  33853     0.059 ±  0.001   ms/op
+[info] Gregexp.findPrefixOf$behind$inf$1k  sample  33933     0.059 ±  0.001   ms/op
+[info] Gregexp.findPrefixOf$chars$1$1k     sample    839     2.385 ±  0.021   ms/op
+[info] Gregexp.findPrefixOf$chars$10$1k    sample    368     5.446 ±  0.055   ms/op
+[info] Gregexp.findPrefixOf$chars$100$1k   sample     54    38.192 ±  0.176   ms/op
+[info] Gregexp.findPrefixOf$quant$1$1k     sample  31634     0.063 ±  0.001   ms/op
+[info] Gregexp.findPrefixOf$quant$10$1k    sample  13493     0.148 ±  0.002   ms/op
+[info] Gregexp.findPrefixOf$quant$100$1k   sample   6652     0.300 ±  0.002   ms/op
+[info] Gregexp.findPrefixOf$quant$inf$1k   sample    966     2.072 ±  0.013   ms/op
+[info] Gregexp.findAllIn$behind$1$1k           ss      2    21.014            ms/op
+[info] Gregexp.findAllIn$behind$10$1k          ss      2   167.077            ms/op
+[info] Gregexp.findAllIn$behind$100$1k         ss      2  1478.601            ms/op
+[info] Gregexp.findAllIn$behind$inf$1k         ss      2  6325.324            ms/op
+[info] Gregexp.findAllIn$chars$1$1k            ss      2     2.832            ms/op
+[info] Gregexp.findAllIn$chars$10$1k           ss      2     6.402            ms/op
+[info] Gregexp.findAllIn$chars$100$1k          ss      2    40.180            ms/op
+[info] Gregexp.findAllIn$quant$1$1k            ss      2     9.645            ms/op
+[info] Gregexp.findAllIn$quant$10$1k           ss      2    89.587            ms/op
+[info] Gregexp.findAllIn$quant$100$1k          ss      2   751.292            ms/op
+[info] Gregexp.findAllIn$quant$inf$1k          ss      2     2.809            ms/op
+[info] Gregexp.findFirstIn$behind$1$1k         ss      2    19.723            ms/op
+[info] Gregexp.findFirstIn$behind$10$1k        ss      2  1497.316            ms/op
+[info] Gregexp.findFirstIn$behind$100$1k       ss      2  1415.969            ms/op
+[info] Gregexp.findFirstIn$behind$inf$1k       ss      2  5563.928            ms/op
+[info] Gregexp.findFirstIn$chars$1$1k          ss      2     2.739            ms/op
+[info] Gregexp.findFirstIn$chars$10$1k         ss      2     5.812            ms/op
+[info] Gregexp.findFirstIn$chars$100$1k        ss      2    40.303            ms/op
+[info] Gregexp.findFirstIn$quant$1$1k          ss      2     9.733            ms/op
+[info] Gregexp.findFirstIn$quant$10$1k         ss      2    89.314            ms/op
+[info] Gregexp.findFirstIn$quant$100$1k        ss      2   741.351            ms/op
+[info] Gregexp.findFirstIn$quant$inf$1k        ss      2     3.840            ms/op
+[info] Gregexp.findPrefixOf$behind$1$1k        ss      2     0.218            ms/op
+[info] Gregexp.findPrefixOf$behind$10$1k       ss      2     0.274            ms/op
+[info] Gregexp.findPrefixOf$behind$100$1k      ss      2     0.208            ms/op
+[info] Gregexp.findPrefixOf$behind$inf$1k      ss      2     0.217            ms/op
+[info] Gregexp.findPrefixOf$chars$1$1k         ss      2     2.718            ms/op
+[info] Gregexp.findPrefixOf$chars$10$1k        ss      2     5.784            ms/op
+[info] Gregexp.findPrefixOf$chars$100$1k       ss      2    40.580            ms/op
+[info] Gregexp.findPrefixOf$quant$1$1k         ss      2     0.244            ms/op
+[info] Gregexp.findPrefixOf$quant$10$1k        ss      2     0.636            ms/op
+[info] Gregexp.findPrefixOf$quant$100$1k       ss      2     3.237            ms/op
+[info] Gregexp.findPrefixOf$quant$inf$1k       ss      2     2.690            ms/op
+[success] Total time: 847 s, completed 2015/12/24 6:11:36

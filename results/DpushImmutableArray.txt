@@ -1,0 +1,126 @@
+jmh:run com.inkenkun.x1.scala.benchmark.DpushImmutableArray.+ -i 2 -wi 3 -f 1 -t 1 -tu ms -bm all
+
+[info] # Run complete. Total time: 00:39:15
+[info]
+[info] Benchmark                                       Mode    Cnt      Score     Error   Units
+[info] DpushImmutableArray.append$List$100k           thrpt      2     ≈ 10⁻⁵            ops/ms
+[info] DpushImmutableArray.append$List$10k            thrpt      2      0.001            ops/ms
+[info] DpushImmutableArray.append$List$1k             thrpt      2      0.097            ops/ms
+[info] DpushImmutableArray.append$Stream$100k         thrpt      2      0.035            ops/ms
+[info] DpushImmutableArray.append$Stream$10k          thrpt      2      0.323            ops/ms
+[info] DpushImmutableArray.append$Stream$1k           thrpt      2      3.283            ops/ms
+[info] DpushImmutableArray.append$Vector$100k         thrpt      2      0.208            ops/ms
+[info] DpushImmutableArray.append$Vector$10k          thrpt      2      2.660            ops/ms
+[info] DpushImmutableArray.append$Vector$1k           thrpt      2     27.402            ops/ms
+[info] DpushImmutableArray.init$List$100k             thrpt      2      0.487            ops/ms
+[info] DpushImmutableArray.init$Stream$100k           thrpt      2      0.691            ops/ms
+[info] DpushImmutableArray.init$Vector$100k           thrpt      2      0.733            ops/ms
+[info] DpushImmutableArray.insert$List$100k           thrpt      2      0.666            ops/ms
+[info] DpushImmutableArray.insert$List$10k            thrpt      2      6.979            ops/ms
+[info] DpushImmutableArray.insert$List$1k             thrpt      2     72.527            ops/ms
+[info] DpushImmutableArray.insert$Stream$100k         thrpt      2      0.259            ops/ms
+[info] DpushImmutableArray.insert$Stream$10k          thrpt      2      2.807            ops/ms
+[info] DpushImmutableArray.insert$Stream$1k           thrpt      2     25.263            ops/ms
+[info] DpushImmutableArray.insert$Vector$100k         thrpt      2      0.206            ops/ms
+[info] DpushImmutableArray.insert$Vector$10k          thrpt      2      2.631            ops/ms
+[info] DpushImmutableArray.insert$Vector$1k           thrpt      2     26.601            ops/ms
+[info] DpushImmutableArray.reallocation$List$100k     thrpt      2    140.808            ops/ms
+[info] DpushImmutableArray.reallocation$List$10k      thrpt      2   1356.225            ops/ms
+[info] DpushImmutableArray.reallocation$List$1k       thrpt      2  10902.854            ops/ms
+[info] DpushImmutableArray.reallocation$Stream$100k   thrpt      2    140.872            ops/ms
+[info] DpushImmutableArray.reallocation$Stream$10k    thrpt      2   1360.180            ops/ms
+[info] DpushImmutableArray.reallocation$Stream$1k     thrpt      2  10771.464            ops/ms
+[info] DpushImmutableArray.reallocation$Vector$100k   thrpt      2    140.829            ops/ms
+[info] DpushImmutableArray.reallocation$Vector$10k    thrpt      2   1360.555            ops/ms
+[info] DpushImmutableArray.reallocation$Vector$1k     thrpt      2  10821.472            ops/ms
+[info] DpushImmutableArray.append$List$100k            avgt      2  92334.492             ms/op
+[info] DpushImmutableArray.append$List$10k             avgt      2    948.318             ms/op
+[info] DpushImmutableArray.append$List$1k              avgt      2     10.375             ms/op
+[info] DpushImmutableArray.append$Stream$100k          avgt      2     27.776             ms/op
+[info] DpushImmutableArray.append$Stream$10k           avgt      2      2.823             ms/op
+[info] DpushImmutableArray.append$Stream$1k            avgt      2      0.281             ms/op
+[info] DpushImmutableArray.append$Vector$100k          avgt      2      4.805             ms/op
+[info] DpushImmutableArray.append$Vector$10k           avgt      2      0.374             ms/op
+[info] DpushImmutableArray.append$Vector$1k            avgt      2      0.036             ms/op
+[info] DpushImmutableArray.init$List$100k              avgt      2      2.125             ms/op
+[info] DpushImmutableArray.init$Stream$100k            avgt      2      1.642             ms/op
+[info] DpushImmutableArray.init$Vector$100k            avgt      2      1.533             ms/op
+[info] DpushImmutableArray.insert$List$100k            avgt      2      1.531             ms/op
+[info] DpushImmutableArray.insert$List$10k             avgt      2      0.145             ms/op
+[info] DpushImmutableArray.insert$List$1k              avgt      2      0.014             ms/op
+[info] DpushImmutableArray.insert$Stream$100k          avgt      2      4.036             ms/op
+[info] DpushImmutableArray.insert$Stream$10k           avgt      2      0.359             ms/op
+[info] DpushImmutableArray.insert$Stream$1k            avgt      2      0.040             ms/op
+[info] DpushImmutableArray.insert$Vector$100k          avgt      2      4.865             ms/op
+[info] DpushImmutableArray.insert$Vector$10k           avgt      2      0.378             ms/op
+[info] DpushImmutableArray.insert$Vector$1k            avgt      2      0.038             ms/op
+[info] DpushImmutableArray.reallocation$List$100k      avgt      2      0.007             ms/op
+[info] DpushImmutableArray.reallocation$List$10k       avgt      2      0.001             ms/op
+[info] DpushImmutableArray.reallocation$List$1k        avgt      2     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.reallocation$Stream$100k    avgt      2      0.007             ms/op
+[info] DpushImmutableArray.reallocation$Stream$10k     avgt      2      0.001             ms/op
+[info] DpushImmutableArray.reallocation$Stream$1k      avgt      2     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.reallocation$Vector$100k    avgt      2      0.007             ms/op
+[info] DpushImmutableArray.reallocation$Vector$10k     avgt      2      0.001             ms/op
+[info] DpushImmutableArray.reallocation$Vector$1k      avgt      2     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.append$List$100k          sample      2  91402.273             ms/op
+[info] DpushImmutableArray.append$List$10k           sample      4    946.602 ± 354.398   ms/op
+[info] DpushImmutableArray.append$List$1k            sample    195     10.292 ±   0.293   ms/op
+[info] DpushImmutableArray.append$Stream$100k        sample     70     29.252 ±   1.924   ms/op
+[info] DpushImmutableArray.append$Stream$10k         sample    656      3.052 ±   0.051   ms/op
+[info] DpushImmutableArray.append$Stream$1k          sample   6438      0.310 ±   0.005   ms/op
+[info] DpushImmutableArray.append$Vector$100k        sample    416      4.808 ±   0.030   ms/op
+[info] DpushImmutableArray.append$Vector$10k         sample   5297      0.377 ±   0.003   ms/op
+[info] DpushImmutableArray.append$Vector$1k          sample  26282      0.038 ±   0.001   ms/op
+[info] DpushImmutableArray.init$List$100k            sample    962      2.080 ±   0.124   ms/op
+[info] DpushImmutableArray.init$Stream$100k          sample   1463      1.366 ±   0.021   ms/op
+[info] DpushImmutableArray.init$Vector$100k          sample   1219      1.641 ±   0.030   ms/op
+[info] DpushImmutableArray.insert$List$100k          sample   1334      1.517 ±   0.123   ms/op
+[info] DpushImmutableArray.insert$List$10k           sample  13415      0.148 ±   0.002   ms/op
+[info] DpushImmutableArray.insert$List$1k            sample  35990      0.014 ±   0.001   ms/op
+[info] DpushImmutableArray.insert$Stream$100k        sample    505      3.964 ±   0.502   ms/op
+[info] DpushImmutableArray.insert$Stream$10k         sample   5544      0.360 ±   0.005   ms/op
+[info] DpushImmutableArray.insert$Stream$1k          sample  25078      0.040 ±   0.001   ms/op
+[info] DpushImmutableArray.insert$Vector$100k        sample    409      4.892 ±   0.065   ms/op
+[info] DpushImmutableArray.insert$Vector$10k         sample   5226      0.382 ±   0.002   ms/op
+[info] DpushImmutableArray.insert$Vector$1k          sample  25815      0.039 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$List$100k    sample   7167      0.009 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$List$10k     sample  17562      0.001 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$List$1k      sample  29445     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.reallocation$Stream$100k  sample   7164      0.009 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$Stream$10k   sample  17505      0.001 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$Stream$1k    sample  34069     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.reallocation$Vector$100k  sample   7156      0.009 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$Vector$10k   sample  17542      0.001 ±   0.001   ms/op
+[info] DpushImmutableArray.reallocation$Vector$1k    sample  32728     ≈ 10⁻⁴             ms/op
+[info] DpushImmutableArray.append$List$100k              ss      2  92622.218             ms/op
+[info] DpushImmutableArray.append$List$10k               ss      2   1007.705             ms/op
+[info] DpushImmutableArray.append$List$1k                ss      2      5.244             ms/op
+[info] DpushImmutableArray.append$Stream$100k            ss      2     65.760             ms/op
+[info] DpushImmutableArray.append$Stream$10k             ss      2      9.295             ms/op
+[info] DpushImmutableArray.append$Stream$1k              ss      2      1.671             ms/op
+[info] DpushImmutableArray.append$Vector$100k            ss      2     27.730             ms/op
+[info] DpushImmutableArray.append$Vector$10k             ss      2      2.987             ms/op
+[info] DpushImmutableArray.append$Vector$1k              ss      2      0.336             ms/op
+[info] DpushImmutableArray.init$List$100k                ss      2      4.186             ms/op
+[info] DpushImmutableArray.init$Stream$100k              ss      2      1.982             ms/op
+[info] DpushImmutableArray.init$Vector$100k              ss      2      2.009             ms/op
+[info] DpushImmutableArray.insert$List$100k              ss      2      4.643             ms/op
+[info] DpushImmutableArray.insert$List$10k               ss      2      1.870             ms/op
+[info] DpushImmutableArray.insert$List$1k                ss      2      0.099             ms/op
+[info] DpushImmutableArray.insert$Stream$100k            ss      2      6.212             ms/op
+[info] DpushImmutableArray.insert$Stream$10k             ss      2      1.054             ms/op
+[info] DpushImmutableArray.insert$Stream$1k              ss      2      0.322             ms/op
+[info] DpushImmutableArray.insert$Vector$100k            ss      2     28.612             ms/op
+[info] DpushImmutableArray.insert$Vector$10k             ss      2      3.193             ms/op
+[info] DpushImmutableArray.insert$Vector$1k              ss      2      0.346             ms/op
+[info] DpushImmutableArray.reallocation$List$100k        ss      2      0.262             ms/op
+[info] DpushImmutableArray.reallocation$List$10k         ss      2      0.539             ms/op
+[info] DpushImmutableArray.reallocation$List$1k          ss      2      0.063             ms/op
+[info] DpushImmutableArray.reallocation$Stream$100k      ss      2      0.267             ms/op
+[info] DpushImmutableArray.reallocation$Stream$10k       ss      2      0.533             ms/op
+[info] DpushImmutableArray.reallocation$Stream$1k        ss      2      0.063             ms/op
+[info] DpushImmutableArray.reallocation$Vector$100k      ss      2      0.271             ms/op
+[info] DpushImmutableArray.reallocation$Vector$10k       ss      2      0.542             ms/op
+[info] DpushImmutableArray.reallocation$Vector$1k        ss      2      0.064             ms/op
+[success] Total time: 2357 s, completed 2015/12/24 5:03:32
