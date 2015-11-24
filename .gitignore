@@ -1,0 +1,43 @@
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+test-output/
+.classpath_nb
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Exclude OS X folder attributes
+.DS_Store
+._*
+
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+
+# backup files
+*~
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+/.idea/
+
+#build files
+BUILD_DATE
+build/
+.gradle
+target/
